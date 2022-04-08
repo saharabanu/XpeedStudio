@@ -1,0 +1,512 @@
+/* common css style start  */
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.full_wrapper{
+    width: 100%;
+}
+/* .logo img{
+    width:100px;
+} */
+
+/* header  */
+.header-full{
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+}
+.header{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    
+
+}
+
+.header .navbar a{
+    font-size:16px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    /* color:#000000; */
+    padding-right: 28px;
+}
+.header .navbar a:hover{
+    color:#ff3333;
+}
+#menu-btn{
+    font-size:16px;
+    cursor:pointer;
+    color:#000000;
+    display:none;
+
+}
+.fourth-menu{
+    background-color: #ff3333;
+    width:100px;
+    color: #ffffff;
+    padding: 11px 20px;
+    box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
+    
+   
+}
+.ticket-menu{
+    padding-right: 8px;
+    color: #ffffff;
+}
+.last-menu{
+    color:#ff3333;
+    padding-right: 0px;
+    padding-left:28px ;
+    font-size:16px;
+}
+
+
+/* bannner style start  */
+
+
+.banner{
+    background-image: url('../Assets/header/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:208px 0 307px;
+    width:100%;
+    overflow-x:hidden;
+
+   
+}
+.banner-inner{
+    color:#fff;
+}
+.banner-p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 12px;
+}
+.banner-heading{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    padding-bottom: 36px;
+}
+.banner-date{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 10px;
+    
+}
+.banner-address{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 52px;
+   
+}
+.banner-icon{
+    font-size: 5px;
+    padding-right: 8px;
+    padding-top: 10px;
+   
+    
+  
+}
+.banner-purchase{
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    padding: 27px 32px;
+    box-shadow: rgba(0, 0, 0, .40) 0px 25px 50px -12px;
+    cursor: pointer;
+}
+.purchase-icon{
+    padding-right: 10px;
+}
+
+.banner-calender{
+    padding-left:27px ;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none; 
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.calender-icon{
+    background-color: #ffffff;
+    color: #ff3333;
+    padding:2px 5px ;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+/* bannner style end  */
+/* counter styke start  */
+.counter{
+background-image: url('../Assets/fun facts/counter.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width:100%;
+margin-top: -84px;
+position: relative;
+overflow-x: hidden;;
+
+}
+
+
+.count-text{
+    padding: 133px 0 332px
+}
+.counter-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.counter-overview{
+    color:#ff3333;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 18px;
+}
+.counter-heading{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+}
+.counter-desc{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    line-height: 22px;
+    padding-top: 10px;
+    /* padding-bottom: 31px; */
+
+}
+.count-up{
+    background-image: url('../Assets/fun facts/count.jpg');
+    background-repeat: no-repeat;
+    width:1025px;
+    position: absolute;
+    top:350px;
+    right:0px;
+    
+    
+
+}
+.count{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap:4px;
+    padding: 36px 50px ;
+}
+.count h2{
+ font-size: 48px;
+ color:#ff3333;
+ font-weight: 700;
+ font-family: 'Poppins', sans-serif;
+ /* padding-bottom: 1px; */
+}
+.count p{
+    font-size: 18px;
+    font-weight: 500;
+    color:#000000;
+    font-family: 'Poppins', sans-serif;
+}
+.last-count{
+    padding-right: 250px;
+}
+/* counter styke end  */
+
+
+
+/* fun part start  */
+
+ .fun{
+    background-image: url('../Assets/counters/fun.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:500px;
+    margin-top: 10px;
+} 
+.fun-main{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.fun-header{
+    font-size: 24px;
+    font-weight: 700;
+    color:#000000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.timer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap:20px;
+}
+.timer h2{
+    font-size: 64px;
+    font-weight: 700;
+    color:#000000;
+    font-family: 'Poppins', sans-serif;
+}
+.offer-time{
+    color:#ff3333;
+    font-size:16px;
+    font-weight:500;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+
+/* fun part end  */
+
+
+
+
+
+
+
+
+
+
+
+/* media query   */
+@media (max-width:768px){
+
+    .container {
+        width: 1110px;
+        margin: 0 auto;
+    }
+    
+    .full_wrapper{
+        width: 100%;
+    }
+
+    /* header  */
+    .header .navbar{
+        position: absolute;
+        top:99%;
+        left:0;
+        right:0;
+        
+
+    }
+    .header .navbar a{
+        display:none;
+        
+    }
+    #menu-btn{
+        
+        display:inline-block;
+    
+    }
+    .fa-times{
+        transform: rotate(180deg)
+    }
+    /* header  end*/
+
+
+    banner{
+        background-image: url('../Assets/header/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* padding:212px 0; */
+        width:100%;
+        
+    
+       
+    }
+    
+    .banner-inner{
+        /* padding-top: 190px;
+        padding-left: 60px; */
+        color:#fff;
+    }
+    .banner-p{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 12px;
+    }
+    .banner-heading{
+        font-size: 64px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1;
+        padding-bottom: 40px;
+    }
+    .banner-date{
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 10px;
+        
+    }
+    .banner-address{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 43px;
+       
+    }
+    .banner-icon{
+        font-size: 5px;
+        padding-right: 8px;
+        padding-top: 10px;
+       
+        
+      
+    }
+    .banner-purchase{
+        color: #ffffff;
+        background-color: #000000;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        padding: 27px 32px;
+        box-shadow: rgba(0, 0, 0, .40) 0px 25px 50px -12px;
+        cursor: pointer;
+    }
+    .purchase-icon{
+        padding-right: 10px;
+    }
+    
+    .banner-calender{
+        padding-left:27px ;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none; 
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    }
+    .calender-icon{
+        background-color: #ffffff;
+        color: #ff3333;
+        padding:2px 5px ;
+        margin-right: 12px;
+        border-radius: 50%;
+    }
+
+    .counter{
+        background-image: url('../Assets/fun facts/counter.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width:100%;
+        /* height: 377px; */
+        margin-top: -82px;
+        position: relative;
+        /* overflow-x: hidden;; */
+        
+        }
+        .count-text{
+            padding: 150px 0 230px
+        }
+        .count-up{
+            background-image: url('../Assets/fun facts/count.jpg');
+            background-repeat: no-repeat;
+            width:1022px;
+            position: absolute;
+            top:250px;
+            right:0;
+            
+            
+        
+        }
+        .count{
+            display: grid;
+            grid-template-columns: 1fr  ;
+            
+            /* padding: 39px */
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width:768px){
+    .header .navbar{
+        position: absolute;
+        top:99%;
+        left:0;
+        right:0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+        
+
+    }
+    .header .navbar a{
+        display:block;
+        
+    }
+    
+    #menu-btn{
+        
+        display:inline-block;
+    
+    }
+    .fa-times{
+        transform: rotate(180deg)
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+    
+} 
+
+
