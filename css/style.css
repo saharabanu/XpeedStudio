@@ -50,7 +50,7 @@ ul {
     font-size:16px;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
-    /* color:#000000; */
+    color:#000000;
     padding-right: 28px;
     /* position: relative;
     line-height: 100px;  */
@@ -68,12 +68,15 @@ ul {
 .fourth-menu{
     background-color: #ff3333;
     width:100px;
-    color: #ffffff;
+   
     padding: 11px 20px;
     box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
     border-radius: 5px;
     
    
+}
+.menu-book{
+    color: #fff;
 }
 .ticket-menu{
     padding-right: 8px;
@@ -267,9 +270,10 @@ overflow-x: hidden;;
     background-position: center;
     background-size: cover;
     width:100%;
-   
+    
     margin: 50px 0 70px;
     overflow-x: hidden;
+    
 } 
 .fun-main{
     display:flex;
@@ -287,14 +291,15 @@ overflow-x: hidden;;
     padding-bottom: 10px;
 }
 
-.timer{
+.countdown{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-gap:20px;
     /* position: relative; */
     padding-bottom: 36px;
+   
 }
-.timer h2{
+.countdown h2{
     font-size: 64px;
     font-weight: 700;
     color:#000000;
@@ -302,14 +307,18 @@ overflow-x: hidden;;
     text-align: left;
 
 }
-.timer-span{
-    /* position: absolute;
-    top:50px; */
+ .timer-span{
+   
     color:#ff3333;
-    font-size: 16px;
+    font-size: 30px;
 
     padding:0 20px;
    
+}
+.offer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .offer-time{
     color:#ff3333;
@@ -333,9 +342,11 @@ overflow-x: hidden;;
 }
 .fun-img img{
    
-   
+    height:410px;
     width:100%;
 }
+
+
 
 
 
@@ -484,14 +495,14 @@ overflow-x: hidden;;
         
     }
     
-    .timer{
+    .countdown{
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-gap:8px;
         /* position: relative; */
         padding-bottom: 36px;
     }
-    .timer h2{
+    .countdown h2{
         font-size: 24px;
         
     

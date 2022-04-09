@@ -42,7 +42,7 @@
                         <a href="#">Speaker</a>
                          <a href="#">News</a> 
                          <a href="#"><i class="fas fa-search"></i></a>
-                         <a href="#" class="fourth-menu"><i class="fa-solid fa-couch ticket-menu"></i>Book Tickets</a>
+                         <a href="#" class="fourth-menu"><i class="fa-solid fa-couch ticket-menu"></i><span class="menu-book">Book Tickets</span></a>
                          <a href="#"><i class="fa-solid fa-braille last-menu"></i></a>
                     </nav>
                     <div id="menu-btn" class="fas fa-bars">
@@ -108,20 +108,20 @@
                     <div class="count-up">
                        <div class="count">
                            <div>
-                               <h2>250+</h2>
+                               <h2 class="visit-count" data-val="250">00</h2>
                                <p>Journalist</p>
                            </div>
                            <div>
-                               <h2>37+</h2>
+                               <h2 class="visit-count" data-val="37">00</h2>
                                <p>Speakers</p>
                            </div>
                            <div>
-                               <h2>4300+</h2>
+                               <h2 class="visit-count" data-val="4300">000</h2>
                                <p>Attendees</p>
                            </div>
                       
                            <div class="last-count">
-                               <h2>109+</h2>
+                               <h2 class="visit-count" data-val="109">000</h2>
                                <p>CEOs</p>
                            </div>
                        </div>
@@ -144,31 +144,57 @@
                                     <h2 class="fun-header">Never miss another speaker <br>
                                         announcement</h2>
                                   </div>
-                                  <div class="timer">
-                                      <div>
-                                          <h2>59 <span class="timer-span">:</span></h2>
-                                          <p class="offer-time">Days</p>
+                                  <div class="countdown">
+                                      <div> 
+                                       <div class="offer">
+                                            
+                                            <div>
+                                                <h2 class="num" id="day-box">00  </h2>
+                                                 
+                                                <p class="offer-time">Days</p></div>
+                                                <div><span class="timer-span">:</span></div>
+
+                                        </div>
+                                        
                                           
                                           
                                       </div>
                                       
                                       <div>
-                                          <h2>23 <span class="timer-span">:</span></h2>
-                                          <p class="offer-time">Hours</p>
+
+                                        <div class="offer">
+                                            
+                                            <div>
+                                                <h2 class="num" id="hours-box">00 </h2>
+                                                <p class="offer-time">Hours</p>
+                                            </div>
+                                                <div><span class="timer-span">:</span></div>
+
+                                        </div>
+                                          
                                           
                                          
                                       </div>
                                      
                                       <div>
-                                          <h2>48 <span class="timer-span">:</span></h2>
+
+                                        <div class="offer">
+                                            
+                                            <div>
+                                                <h2 class="num" id="minutes-box">00 </h2>
                                           <p class="offer-time">minutes</p>
+                                            </div>
+                                                <div><span class="timer-span">:</span></div>
+
+                                        </div>
+                                          
                                          
                                           
                                          
                                       </div>
                                       
                                       <div>
-                                          <h2>30 </h2>
+                                          <h2 class="num" id="seconds-box">00 </h2>
                                           <p class="offer-time">Seconds</p>
                                           
                                       </div>
@@ -194,7 +220,7 @@
     
      
     <!-- script js   -->
-   <script>
+   <!-- <script>
 
     let navbar = document.querySelector('.header .navbar');
     let menuBtn= document.querySelector('#menu-btn');
@@ -203,7 +229,8 @@
     navbar.classList.toggle('active');
     }
 
-   </script>
+   </script> -->
+   <script src="js/script.js"></script>
    
 </body>
 </html>
