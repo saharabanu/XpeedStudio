@@ -25,9 +25,7 @@ ul {
 .full_wrapper{
     width: 100%;
 }
-/* .logo img{
-    width:100px;
-} */
+
 
 /* header  */
 .header-full{
@@ -47,12 +45,15 @@ ul {
 
 }
 
+
 .header .navbar a{
     font-size:16px;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     /* color:#000000; */
     padding-right: 28px;
+    /* position: relative;
+    line-height: 100px;  */
 }
 .header .navbar a:hover{
     color:#ff3333;
@@ -70,6 +71,7 @@ ul {
     color: #ffffff;
     padding: 11px 20px;
     box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
+    border-radius: 5px;
     
    
 }
@@ -83,6 +85,11 @@ ul {
     padding-left:28px ;
     font-size:16px;
 }
+
+
+
+
+
 
 
 /* bannner style start  */
@@ -146,6 +153,7 @@ ul {
     padding: 27px 32px;
     box-shadow: rgba(0, 0, 0, .40) 0px 25px 50px -12px;
     cursor: pointer;
+    border-radius: 5px;
 }
 .purchase-icon{
     padding-right: 10px;
@@ -259,13 +267,15 @@ overflow-x: hidden;;
     background-position: center;
     background-size: cover;
     width:100%;
-    height:500px;
-    margin-top: 10px;
+   
+    margin: 50px 0 70px;
+    overflow-x: hidden;
 } 
 .fun-main{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+   
 
 }
 .fun-header{
@@ -274,17 +284,32 @@ overflow-x: hidden;;
     color:#000000;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
+
 .timer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-gap:20px;
+    /* position: relative; */
+    padding-bottom: 36px;
 }
 .timer h2{
     font-size: 64px;
     font-weight: 700;
     color:#000000;
     font-family: 'Poppins', sans-serif;
+    text-align: left;
+
+}
+.timer-span{
+    /* position: absolute;
+    top:50px; */
+    color:#ff3333;
+    font-size: 16px;
+
+    padding:0 20px;
+   
 }
 .offer-time{
     color:#ff3333;
@@ -292,8 +317,26 @@ overflow-x: hidden;;
     font-weight:500;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
+    text-align: left;
+
 
 }
+.ticket-btn{
+    color:#ffffff;
+    font-size: 16px;
+    background: -webkit-linear-gradient(left, red, orange);
+    box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
+    font-weight:500;
+    font-family: 'Rubik', sans-serif;
+    padding:25px 36px;
+    border-radius: 5px;
+}
+.fun-img img{
+   
+   
+    width:100%;
+}
+
 
 
 
@@ -309,17 +352,12 @@ overflow-x: hidden;;
 
 
 
+
+
 /* media query   */
 @media (max-width:768px){
 
-    .container {
-        width: 1110px;
-        margin: 0 auto;
-    }
-    
-    .full_wrapper{
-        width: 100%;
-    }
+     
 
     /* header  */
     .header .navbar{
@@ -327,163 +365,8 @@ overflow-x: hidden;;
         top:99%;
         left:0;
         right:0;
-        
-
-    }
-    .header .navbar a{
-        display:none;
-        
-    }
-    #menu-btn{
-        
-        display:inline-block;
-    
-    }
-    .fa-times{
-        transform: rotate(180deg)
-    }
-    /* header  end*/
-
-
-    banner{
-        background-image: url('../Assets/header/banner.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        /* padding:212px 0; */
-        width:100%;
-        
-    
-       
-    }
-    
-    .banner-inner{
-        /* padding-top: 190px;
-        padding-left: 60px; */
+        background-color: rgba(224, 8, 8, 0.849);
         color:#fff;
-    }
-    .banner-p{
-        font-size: 18px;
-        font-weight: 500;
-        font-family: 'Rubik', sans-serif;
-        padding-bottom: 12px;
-    }
-    .banner-heading{
-        font-size: 64px;
-        font-weight: 700;
-        font-family: 'Poppins', sans-serif;
-        line-height: 1;
-        padding-bottom: 40px;
-    }
-    .banner-date{
-        font-size: 24px;
-        font-weight: 500;
-        font-family: 'Rubik', sans-serif;
-        padding-bottom: 10px;
-        
-    }
-    .banner-address{
-        font-size: 16px;
-        font-weight: 500;
-        font-family: 'Rubik', sans-serif;
-        padding-bottom: 43px;
-       
-    }
-    .banner-icon{
-        font-size: 5px;
-        padding-right: 8px;
-        padding-top: 10px;
-       
-        
-      
-    }
-    .banner-purchase{
-        color: #ffffff;
-        background-color: #000000;
-        font-weight: 500;
-        font-size: 16px;
-        font-family: 'Rubik', sans-serif;
-        padding: 27px 32px;
-        box-shadow: rgba(0, 0, 0, .40) 0px 25px 50px -12px;
-        cursor: pointer;
-    }
-    .purchase-icon{
-        padding-right: 10px;
-    }
-    
-    .banner-calender{
-        padding-left:27px ;
-        background-color: Transparent;
-        background-repeat:no-repeat;
-        border: none; 
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        font-family: 'Roboto', sans-serif;
-        cursor: pointer;
-    }
-    .calender-icon{
-        background-color: #ffffff;
-        color: #ff3333;
-        padding:2px 5px ;
-        margin-right: 12px;
-        border-radius: 50%;
-    }
-
-    .counter{
-        background-image: url('../Assets/fun facts/counter.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width:100%;
-        /* height: 377px; */
-        margin-top: -82px;
-        position: relative;
-        /* overflow-x: hidden;; */
-        
-        }
-        .count-text{
-            padding: 150px 0 230px
-        }
-        .count-up{
-            background-image: url('../Assets/fun facts/count.jpg');
-            background-repeat: no-repeat;
-            width:1022px;
-            position: absolute;
-            top:250px;
-            right:0;
-            
-            
-        
-        }
-        .count{
-            display: grid;
-            grid-template-columns: 1fr  ;
-            
-            /* padding: 39px */
-        }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
- @media (max-width:768px){
-    .header .navbar{
-        position: absolute;
-        top:99%;
-        left:0;
-        right:0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         
         
@@ -503,10 +386,134 @@ overflow-x: hidden;;
         transform: rotate(180deg)
     }
     .header .navbar.active{
+        
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
     }
+
+    .fourth-menu{
+        background-color: #ff3333;
+        width:200px;
+        color: #ffffff;
+        padding: 11px 12px;
+        box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
+        border-radius: 5px;
+        
+       
+    }
     
-} 
+    .last-menu{
+        color:#ffffff;
+        
+    }
+    
+    
+    /* header  end*/
+
+
+    /* banner  */
+    
+    .banner-inner{
+        padding: 0 20px;
+        color:#fff;
+    }
+    
+    .banner-heading{
+        font-size: 40px;
+        
+    }
+    /* baner end  */
+    
+    /* counter  */
+        .counter{
+            padding: 0 20px;
+        }
+        
+        
+       
+        .counter-content{
+            display:grid;
+            grid-template-columns: 1fr ;
+            grid-gap:10px;
+        }
+        
+        .counter-heading{
+            font-size: 36px;
+            
+        
+        }
+       
+        .count-up{
+            background-image: url('../Assets/fun facts/count.jpg');
+            background-repeat: no-repeat;
+            width:100%;
+            position: absolute;
+            top:600px;
+            right:0px;
+            
+            
+        
+        }
+        .count{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-gap:8px;
+            padding: 36px 50px ;
+        }
+        .count h2{
+         font-size: 30px;
+         
+        }
+        
+        
+    /* counter end  */
+    
+    /* fun part   */
+
+    
+    .fun-main{
+        display:flex;
+        flex-direction: column;
+      
+        
+       
+    
+    }
+    .fun-header{
+        font-size: 20px;
+        
+    }
+    
+    .timer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap:8px;
+        /* position: relative; */
+        padding-bottom: 36px;
+    }
+    .timer h2{
+        font-size: 24px;
+        
+    
+    }
+    
+    
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
